@@ -1,0 +1,17 @@
+# example /etc/network/interfaces
+
+# the loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth0
+iface eth0 inet dhcp
+
+#iface wlan0 inet dhcp
+#wpa-ssid "mynetworkhost"
+#wpa-psk "myhostpassword"
+
+iface wlan0 inet static
+address 192.168.1.1
+netmask 255.255.255.0

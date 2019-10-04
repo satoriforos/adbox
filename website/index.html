@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Configure AdBox</title>
+
+		<link rel="stylesheet" href="assets/libraries/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/libraries/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="assets/stylesheets/style.css" />
+
+		<script src="assets/libraries/jquery-1.12.3.min.js"></script>
+		<script src="assets/libraries/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+		<script src="assets/javascripts/script.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>Configure AdBox</h1>
+		</header>
+
+		<article>
+			<section>
+
+			<p>Input the Wifi access point and password settings below to configure the AdBox to connect to a local WiFi Network.</p>
+
+			<form action="api/updatewifisettings.php" method="post">
+				<div class="input-group">
+					<label for="accesspoint">Access Point:</label>
+	  				<input id="accesspoint" name="accesspoint" type="text" placeholder="xfinitywifi" required="required" />
+				</div>
+
+				<div class="input-group">
+					<label for="accesspoint_password">Password:</label>
+					<input id="accesspoint_password" name="accesspoint_password" type="text" placeholder="password" required="required" />
+				</div>
+
+				<div class="form_item">
+				<input id="updatewpa" type="submit" value="Save" class="btn btn-primary" />
+				</div>
+			</form>
+
+			</section>
+
+		</article>
+
+
+	</body>
+</html>
+
+
+
